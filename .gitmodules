@@ -1,0 +1,3 @@
+[submodule "compojure"]
+	path = compojure
+	url = git@github.com:ric03uec/compojure.git
