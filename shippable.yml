@@ -8,6 +8,7 @@ before_install:
   - echo B----- $BAZ
   - echo F------ $FOO
   
+# more changes
 # something which is commented
 # comment after changes
 reset_minion: true
