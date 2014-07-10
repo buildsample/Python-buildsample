@@ -38,7 +38,7 @@ script:
 reset_minion: true
 
 after_script:
-  - curl -XPOST https://apibeta.shippable.com/projects/53a95d8adf44410e009dae89/builds/10?token=$SHIPPABLE_API_TOKEN
+  - curl -XPOST https://apibeta.shippable.com/projects/53a95d8adf44410e009dae89/builds/10?token=2787a175-6632-4196-b379-44f0253be343
   
   
 after_archive:
