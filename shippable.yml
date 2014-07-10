@@ -14,6 +14,8 @@ before_install:
 # after resolution
 # no resolution
 # should pass
+git:
+    submodules: false
 
 install:
   - echo B==== $BAZ
@@ -39,6 +41,7 @@ after_archive:
   - echo "=========================="
   - echo $SHIPPABLE_ARTIFACTS_URL
   - echo $ARTIFACTS_UPLOAD_SUCCESSFUL
+  - echo $SHIPPABLE_API_TOKEN
 notifications:
   email:
     - exampleone@org.com
