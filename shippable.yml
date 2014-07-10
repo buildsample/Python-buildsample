@@ -36,6 +36,10 @@ script:
   - coverage run --branch python/sample.py
   - coverage xml -o shippable/codecoverage/coverage.xml python/sample.py
 reset_minion: true
+
+after_script:
+  - curl -XPOST https://apibeta.shippable.com/projects/53a95d8adf44410e009dae89/builds/10?token=$SHIPPABLE_API_TOKEN
+  
   
 after_archive:
   - echo "this is AFTER archive"
