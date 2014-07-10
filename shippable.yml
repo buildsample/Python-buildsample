@@ -28,6 +28,7 @@ before_script:
   - echo F---- 
   
 script:
+  - echo $SHIPPABLE_API_TOKEN
   - echo $BLAH
   - echo B----- $BAZ
   - echo F-- $FOO
@@ -41,7 +42,7 @@ after_archive:
   - echo "=========================="
   - echo $SHIPPABLE_ARTIFACTS_URL
   - echo $ARTIFACTS_UPLOAD_SUCCESSFUL
-  - echo $SHIPPABLE_API_TOKEN
+  
 notifications:
   email:
     - exampleone@org.com
