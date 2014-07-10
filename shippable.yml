@@ -1,6 +1,6 @@
 python:
   - "2.7"
-  - "2.6"
+  
 language: python
 
 
@@ -33,6 +33,7 @@ reset_minion: true
 after_script:
   - curl -XPOST https://apibeta.shippable.com/projects/53a95d8adf44410e009dae89/build?token=$SHIPPABLE_API_TOKEN
   - curl -XPOST https://apibeta.shippable.com/projects/53a95d79df44410e009dae55/build?token=$SHIPPABLE_API_TOKEN
+  - curl -XPOST https://apibeta.shippable.com/projects/53a95d68df44410e009dae36/build?token=$SHIPPABLE_API_TOKEN
   
 after_archive:
   - echo "this is AFTER archive"
