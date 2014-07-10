@@ -2,12 +2,7 @@ python:
   - "2.7"
 language: python
 
-before_install:
-  - export FOO=1234
-  - export BAZ=567
-  - echo B----- $BAZ
-  - echo F------ $FOO
-  
+
 # another comment in branch
 # comment in a branch
 #comment comment
@@ -18,17 +13,14 @@ git:
     submodules: false
 
 install:
-  - echo B==== $BAZ
-  - echo F==== $FOO
+  
   - pip install --use-mirrors -r requirements.txt
 before_script: 
   - mkdir -p shippable/codecoverage shippable/testresults
-  - export BAZ=456
-  - echo B---- $BAZ
-  - echo F---- 
+   
   
 script:
-  - echo $SHIPPABLE_API_TOKEN
+  
   - echo $BLAH
   - echo B----- $BAZ
   - echo F-- $FOO
@@ -45,6 +37,7 @@ after_archive:
   - echo "=========================="
   - echo $SHIPPABLE_ARTIFACTS_URL
   - echo $ARTIFACTS_UPLOAD_SUCCESSFUL
+  - echo $SHIPPABLE_API_TOKEN
   
 notifications:
   email:
