@@ -19,9 +19,8 @@ install:
 before_script: 
   - mkdir -p shippable/codecoverage shippable/testresults
    
-  
+ #test 
 script:
-  
   - echo $BLAH
   - echo B----- $BAZ
   - echo F-- $FOO
