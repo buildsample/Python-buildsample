@@ -10,8 +10,8 @@ language: python
 # after resolution
 # no resolution
 # should pass
-#git:
- #   submodules: false
+git:
+ submodules: false
 
 install:
   
