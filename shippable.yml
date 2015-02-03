@@ -11,7 +11,7 @@ language: python
 # no resolution
 # should pass
 git:
-    submodules: false
+ submodules: false
 
 install:
   
