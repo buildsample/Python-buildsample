@@ -14,8 +14,8 @@ git:
  submodules: false
 
 install:
-  
-  - pip install --use-mirrors -r requirements.txt
+   - pip install --use-mirrors -r requirements.txt
+
 before_script: 
   - mkdir -p shippable/codecoverage shippable/testresults
    
