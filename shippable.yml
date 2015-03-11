@@ -1,13 +1,13 @@
 python:
   - "2.7"
-  -  3.3
+  
   
 language: python
-env:
- global:
-   - Foo=bar
-   - secure: ZRGIdbThtxms/LM50GP5lx75HcFJIFaoqtoQu0JfM/H09fiKJgHiECIhsJC72Y89a8UZCbUn+GlEoWDfY/VXPa0cGTqUgPviH3fa0zwbmd+iTFNBXoIDzMIhA7fM5xr6uNaANwRRlytdQ/V2DHL+73dI8u3C87vVR8ck4tvS0Bz1aNTdbhUIIcRCIPmynUbCvEFHybBd33pzTrd/gchKqCVX7NEhmHiBKi5aF9+na3J0Sg9SImIurK+oZXW+1H4VLTAsuftjwn7fLtbpnx/gftT2QVPm0NFFlOsWnl3Hsk+xZdqdYsRS7VpphHrVsbH1T3Yq+LFJ8wZYRndq4bMiEw==
-
+matrix:
+  include:
+    - python: 3.3
+      env:
+        - FOO=bar
 # another comment in branch
 # comment in a branch
 #comment comment
