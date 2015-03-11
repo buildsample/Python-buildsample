@@ -6,8 +6,8 @@ language: python
 matrix:
   include:
     - python: 3.3
-      env:
-        - FOO=bar
+      #env:
+       # - FOO=bar
         
 # another comment in branch
 # comment in a branch
