@@ -2,7 +2,7 @@ python:
   - "2.7"
   - "3.3"
   
-language: python
+language: pythontest
 env:
  - FOO=bar
  - BAR=foo
