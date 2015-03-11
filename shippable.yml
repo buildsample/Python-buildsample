@@ -6,6 +6,7 @@ language: python
 matrix:
   include:
     - python: 3.3
+    - python: 3.4
       #env:
        # - FOO=bar
         
