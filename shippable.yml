@@ -20,9 +20,10 @@ install:
 before_script: 
   - mkdir -p shippable/codecoverage shippable/testresults
   - echo $FOO and $BAR
+
 matrix:
   exclude:
-    - python:2.7
+    - python: 2.7
       env: FOO=bar
    
  #test 
