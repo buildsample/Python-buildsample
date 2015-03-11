@@ -8,6 +8,7 @@ matrix:
     - python: 3.3
       env:
         - FOO=bar
+        
 # another comment in branch
 # comment in a branch
 #comment comment
@@ -22,7 +23,7 @@ install:
 
 before_script: 
   - mkdir -p shippable/codecoverage shippable/testresults
-  - echo $Foo and $secret_key
+  - echo $FOO 
  #test 
 script:
   - echo $BLAH
