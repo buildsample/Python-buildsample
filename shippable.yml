@@ -22,7 +22,8 @@ before_script:
   - echo $FOO and $BAR
 matrix:
   exclude:
-  -  env: FOO=bar
+    - python:2.7
+      env: FOO=bar
    
  #test 
 script:
