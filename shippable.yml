@@ -4,8 +4,11 @@ python:
   
 language: python
 env:
- - FOO=bar
- - BAR=foo
+ global:
+  - secure: FcH0nAhAePIJh6RDDH2xtGZW8aALDspBkGvvjCDABPee9VhzuGlGYi9xNqk4iLo7vJGMypTQFXz6BBb0eK8OeHjSd+xsjPyUxcXnN8W5g27/FP4fmdwgW5RUV3+Eco5y+zxQvj2mjRsIytiLHLx0QbJUORleEHqZBTe4mjpdFhof2LIUTjIOkH8kH0bQBv46quyINK1A19HiB7hTT4U9QFicJyvTryhJ6/jyhQmshGldRnbGJRpwnnHnt5o4oab62niObTYr4zpcUDRmTa5xYXIeiTq8ASkrI3sYjt3PsiCn2CvQjmR4WDghpizudh6G2w+24ablfYekEGjss1NN1w==
+ matrix:  
+  - FOO=bar
+  - BAR=foo
 # another comment in branch
 # comment in a branch
 #comment comment
