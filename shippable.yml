@@ -23,6 +23,7 @@ install:
 before_script: 
   - mkdir -p shippable/codecoverage shippable/testresults
   - echo $FOO and $BAR
+  - echo $key1 and $key2
 
 matrix:
   exclude:
