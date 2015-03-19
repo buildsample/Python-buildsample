@@ -45,6 +45,3 @@ after_archive:
   - echo $ARTIFACTS_UPLOAD_SUCCESSFUL
   - echo $SHIPPABLE_API_TOKEN
   
-notifications:
-  email:
-    - exampleone@org.com
