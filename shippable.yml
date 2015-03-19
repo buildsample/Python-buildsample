@@ -48,5 +48,4 @@ after_archive:
 notifications:
  email:
    - buildsampletest@gmail.com
-   - vidyac.raghav@gmail.com.com
-  
+   - vidyac.raghav@gmail.com
