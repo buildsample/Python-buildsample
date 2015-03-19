@@ -13,7 +13,7 @@ def IsEven(n):
         return False
 
 def IsOdd(n):
-    return n % 2 == 1
+    return n % 2 == 0#1
 
 # Here's our "unit tests".
 class IsOddTests(unittest.TestCase):
