@@ -47,5 +47,7 @@ after_archive:
   
 notifications:
  email:
+  recipients:
    - buildsampletest@gmail.com
    - vidyac.raghav@gmail.com
+  on_success: always
