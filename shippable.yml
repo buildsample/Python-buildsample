@@ -1,9 +1,8 @@
-
 python:
   - "2.7"
-  
-  
+
 language: python
+
 matrix:
   include:
     - python: 3.3
@@ -34,7 +33,7 @@ script:
   - nosetests python/sample.py --with-xunit --xunit-file=shippable/testresults/nosetests.xml
   - coverage run --branch python/sample.py
   - coverage xml -o shippable/codecoverage/coverage.xml python/sample.py
-reset_minion: true
+#reset_minion: true
 
 after_script:
   - curl -XPOST https://apibeta.shippable.com/projects/53a95d8adf44410e009dae89/build?token=$SHIPPABLE_API_TOKEN
