@@ -27,9 +27,11 @@ before_script:
   - echo $key1 and $key2
 
 matrix:
-  exclude:
-    - python: 2.7
-      env: FOO=bar
+  include:
+    - python: 3.3
+      env: 
+        - KUBE_TEST_API_VERSIONS="v1beta1"  KUBE_TEST_ETCD_PREFIXES="registry"
+        
    
  #test 
 script:
