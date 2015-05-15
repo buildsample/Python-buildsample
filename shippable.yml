@@ -3,6 +3,10 @@ python:
 
 language: python
 
+env:
+ - name=vidya user=buildsample
+ 
+
 matrix:
   include:
     - python: 3.3
@@ -25,6 +29,7 @@ install:
 before_script: 
   - mkdir -p shippable/codecoverage shippable/testresults
   - echo $FOO 
+  - echo $name and $user
  #test 
 script:
   - echo $BLAH
