@@ -15,7 +15,7 @@ env:
 # no resolution
 # should pass
 git:
- submodules: true
+ submodules: false
 
 #install:
  #  - pip install --use-mirrors -r requirements.txt
